@@ -1,9 +1,12 @@
+""" Solves Problem A """
+
 import sys
 
-sys.stdin = open('input.txt', 'r')
+sys.stdin = open('A/input.txt', 'r', encoding="utf8")
 input = lambda: sys.stdin.readline().rstrip()
 
-def solve():
+def main():
+    """ Main Function """
 
     input()
     word = input().lower()
@@ -32,6 +35,6 @@ out = []
 d = { "m":0, "e":1, "o":2, "w":3}
 
 for _ in range(int(input())):
-    out.append(solve())
+    out.append(main())
 
 print("\n".join(map(str, out)))
